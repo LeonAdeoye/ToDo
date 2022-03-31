@@ -36,11 +36,19 @@ class TaskRow extends Component
     {
         const taskName = this.props.task.name;
         const taskStatus = this.props.task.status;
+        const nameOfTask = "nameOfTask"
         return (
             <div>
-                {taskName}
-                <StatusButton status={taskStatus} updateStatus={() => this.updateStatus(this.props.task)}/>
-                <button onClick={() => this.removeTask(this.props.task)}>Delete</button>
+                <table >
+                    <tr>
+                        <td className={"nameOfTask"}>{taskName}</td>
+                        <td className={"status"}><StatusButton status={taskStatus} updateStatus={() => this.updateStatus(this.props.task)}/></td>
+                        <td className={"delete"}><button onClick={() => this.removeTask(this.props.task)}>Delete</button></td>
+                    </tr>
+                </table>
+                {/*{taskName}*/}
+                {/*<StatusButton status={taskStatus} updateStatus={() => this.updateStatus(this.props.task)}/>*/}
+                {/*<button onClick={() => this.removeTask(this.props.task)}>Delete</button>*/}
             </div>
         );
     }

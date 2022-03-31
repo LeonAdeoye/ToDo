@@ -6,3 +6,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+table, th, td {
+  border:1px solid lightgrey;
+  border-collapse: collapse;
+  width:100%;
+}
+
+td.nameOfTask
+{
+  width: 80%;
+}
+
+td.status
+{
+  width: 10%;
+}
+
+td.delete
+{
+  width: 10%;
+}
