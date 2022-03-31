@@ -46,9 +46,6 @@ class TaskRow extends Component
                         <td className={"delete"}><button onClick={() => this.removeTask(this.props.task)}>Delete</button></td>
                     </tr>
                 </table>
-                {/*{taskName}*/}
-                {/*<StatusButton status={taskStatus} updateStatus={() => this.updateStatus(this.props.task)}/>*/}
-                {/*<button onClick={() => this.removeTask(this.props.task)}>Delete</button>*/}
             </div>
         );
     }
