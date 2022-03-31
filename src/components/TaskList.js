@@ -16,17 +16,12 @@ class TaskList extends Component
     render()
     {
         const todoItems = this.props.tasks.map((task) =>
-            // Add epoch time suffix
-            <li key={task.name}>
-                <TaskRow task={task} removeTask={() => this.removeTask(task)} updateStatus={() => this.updateStatus(task)}/>
-            </li>
+            <TaskRow task={task} removeTask={() => this.removeTask(task)} updateStatus={() => this.updateStatus(task)}/>
         );
 
         return (
             <div>
-                <ul>
                     {todoItems}
-                </ul>
             </div>
         );
     }

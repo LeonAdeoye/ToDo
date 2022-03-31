@@ -32,7 +32,7 @@ class AddNewTask extends Component
         const addButton = this.state.newTask !== '' && <button onClick={this.addTask}>Add</button>;
         return (
             <div>
-                <input placeholder="Enter task here..." value={this.state.newTask} onChange={this.hasChanged}/>
+                <input className={"new-task"} placeholder="Enter task here..." value={this.state.newTask} onChange={this.hasChanged}/>
                 {addButton}
                 {clearButton}
             </div>

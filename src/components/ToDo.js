@@ -27,6 +27,7 @@ class ToDo extends React.Component
 
     removeTask = (task) =>
     {
+        // TODO fix bug in multiple adding then delete last one.
         const result = this.state.tasks.filter((taskToRemove) => taskToRemove.name !== task.name);
         this.setState( {tasks: result});
     }
